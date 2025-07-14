@@ -1,0 +1,21 @@
+@import "../../utils/variable.less";
+
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  border-bottom: 1px solid darken(@sup-color, 10%);
+}
+
+.itemInfo {
+  .itemName {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: @basic-color;
+  }
+  
+  .itemQuantity {
+    color: darken(@basic-color, 20%);
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../utils/variable.less";
+
+.paginateButton {
+  padding: 8px 16px;
+  border: 1px solid @basic-color;
+  border-radius: 4px;
+  background-color: @sup-color;
+  color: black;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all @transition-speed;
+
+  &:hover:not(:disabled) {
+    background-color: @basic-color;
+    color: white;
+    border-color: white;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  &.active {
+    background-color: @accent-color;
+    color: white;
+    border-color: @accent-color;
+  }
+}

@@ -1,0 +1,50 @@
+@import "../../utils/variable.less";
+
+.productItem {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s,box-shadow 0.2s; // в переменную тоже?
+  height: 100%;
+  max-width: 30vh;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.imageContainer {
+  height: 160px;
+  background-color: @sup-color;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.productName {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  min-height: 3em;
+}
+
+.addToCartButton {
+  padding: 8px 16px;
+  background-color: @accent-color;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: auto;
+  width: 100%;
+  &:hover {
+    background-color: darken(@accent-color, 10%);
+  }
+
+}
