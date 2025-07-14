@@ -1,0 +1,27 @@
+.container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.pageText {
+  min-width: 100px;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .container {
+    gap: 12px;
+    margin-top: 30px;
+  }
+
+  .pageText {
+    min-width: 80px;
+    font-size: 13px;
+  }
+}
